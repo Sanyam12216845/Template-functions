@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+template <typename T, typename U>
+U add(T x,U y){//this will give integer value in cout 
+//U add(T x, U y) this will give double value in cout
+	return (x+y);
+}
+int main(){
+	cout<<"The addition of two integers is:"<<add<int,double>(4,6.7)<<endl;
+	cout<<"The addition of two decimal numbers is:"<<add<int>(4.8,6.5)<<endl;
+	cout<<"The addition of two double numbers is:"<<add<int>(7.89,3.89)<<endl;
+	return 0;
+
+
+}
